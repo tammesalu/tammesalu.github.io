@@ -4,8 +4,12 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Berlin Marathon</title>
     <style>
-      html {
+      html, body {
         text-align: center;
+        font-family: sans-serif;
+        background-image: linear-gradient(0deg, #13049f, #67f9fe);
+        height: 100%;
+        color: #fff;
       }
 
       section {
@@ -14,22 +18,23 @@
       }
 
       section > div {
-        border: 5px solid black;
+        border: 10px solid white;
         flex: 1;
-        margin: 5px;
+        margin: 10px;
+        border-radius: 25px;
+        background: rgba(255, 255, 255, 0.1);
       }
 
       section > div > p.bignumber {
-        font-size: 4em;
+        font-size: 6em;
+        margin: 0.3em;
       }
-
-
 
     </style>
   </head>
 
   <body>
-    <h1>berlin marathon 2016</h1>
+    <h1>Berlin<br>Marathon<br>2016</h1>
     <section>
       <div id="months">
         <p class="bignumber"></p>
