@@ -2,15 +2,64 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Marathon</title>
+    <title>Berlin Marathon</title>
+    <style>
+      html {
+        text-align: center;
+      }
+
+      section {
+        display: flex;
+        flex-direction: row;
+      }
+
+      section > div {
+        border: 5px solid black;
+        flex: 1;
+        margin: 5px;
+      }
+
+      section > div > p.bignumber {
+        font-size: 4em;
+      }
+
+
+
+    </style>
   </head>
 
   <body>
-    <h1>Marathon</h1>
-  
-  
-  
-  
+    <h1>berlin marathon 2016</h1>
+    <section>
+      <div id="months">
+        <p class="bignumber"></p>
+        <p>months</p>
+      </div>
+      <div id="weeks">
+        <p class="bignumber"></p>
+        <p>weeks</p>
+      </div>
+      <div id="days">
+        <p class="bignumber"></p>
+        <p>days</p>
+      </div>
+    </section>
+
+    <section>
+      <div id="hours">
+        <p class="bignumber"></p>
+        <p>hours</p>
+      </div>
+      <div id="minutes">
+        <p class="bignumber"></p>
+        <p>minutes</p>
+      </div>
+      <div id="seconds">
+        <p class="bignumber"></p>
+        <p>seconds</p>
+      </div>
+    </section>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.1/moment.min.js"></script>
     <script src="main.js"></script>
