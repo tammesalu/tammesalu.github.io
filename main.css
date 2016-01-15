@@ -1,0 +1,35 @@
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+body {
+    /*background: red;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: darkslategray;
+    margin: 0;
+    transition: all 4s;
+}
+
+body.normal {
+    background-color: white;
+}
+
+body > main {
+    max-width: 80%;
+    /*background: lightblue;*/
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
+
+body > main > p {
+    display: none;
+}
