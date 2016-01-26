@@ -10,6 +10,12 @@
                 background: pink;
             }
             
+            body {
+                margin: 0;
+                height: 100%;
+                background: orange;
+            }
+            
         
         </style>
         
@@ -23,15 +29,16 @@
             
             console.log("App Running!");
             
-            $('body').on('touchstart', function () {
+            $('body').on('touchstart', function (event) {
                 console.log('touchstart');
+                event.preventDefault();
             });
             
-            $('body').on('touchmove', function () {
+            $('body').on('touchmove', function (event) {
                 console.log('touchmove');
             });
             
-            $('body').on('touchend', function () {
+            $('body').on('touchend', function (event) {
                 console.log('touchend');
             });
             
