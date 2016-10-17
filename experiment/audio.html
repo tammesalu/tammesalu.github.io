@@ -8,8 +8,19 @@
 <body>
 	<h1>Audio Test</h1>
 
+	<a id="play-button" href="#">Play</a>
+
 	<script>
 		console.log('App running.');
+
+		var button = document.getElementById('play-button');
+
+		button.onClick = function (event) {
+			console.log('Click play button');
+
+
+		};
+
 	</script>
 </body>
 </html>
