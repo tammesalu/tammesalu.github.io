@@ -10,15 +10,15 @@
     console.log("App running!");
     
     $(document).on("keydown", function (event) {
-      console.log(event); 
+      console.log("keydown", event.keyCode); 
     });
   
     $(document).on("keyup", function (event) {
-      console.log(event);
+      console.log("keyup", event.keyCode);
     });
     
     $(document).on("keypress", function (event) {
-      console.log(event);
+      console.log("keyup", event.keyCode);
     });
   
   
