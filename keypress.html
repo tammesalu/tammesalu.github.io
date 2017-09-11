@@ -10,17 +10,16 @@
     console.log("App running!");
     
     $(document).on("keydown", function (event) {
-      console.log("keydown", event); 
+      console.log("keydown", event.getModifierState('CapsLock')); 
     });
   
     $(document).on("keyup", function (event) {
-      console.log("keyup", event);
+      console.log("keyup", event.getModifierState('CapsLock'));
     });
     
     $(document).on("keypress", function (event) {
-      console.log("keypress", event);
+      console.log("keypress", event.getModifierState('CapsLock'));
     });
-  
   
   </script>
 </body>
