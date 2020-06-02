@@ -6,8 +6,13 @@
     <body>
         <h1>Website with Outfunnel tracking</h1>
         <script>
-            var OFID = "5ca7106fa03c290e4262928c";
-          </script>
-          <script src="http://127.0.0.1:3002/c.js"></script>
+            window.OFID = "5ec7c5495149988edeb198ea";
+            (function(){
+            var script = document.createElement('script');
+            var url = 'http://127.0.0.1:3002/c.js?v='+ new Date().toISOString().substring(0,10)
+            script.setAttribute('src', url);
+            document.getElementsByTagName('head')[0].appendChild(script);
+            })();
+        </script>
     </body>
 </html>
