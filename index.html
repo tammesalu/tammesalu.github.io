@@ -12,7 +12,37 @@
       type="text/css"
     />
 
-    <style></style>
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #555;
+      }
+
+      .name {
+        font-family: 'Raleway';
+        font-weight: 200;
+        font-size: 4rem;
+      }
+
+      .container {
+        margin-top: 100px;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .body-text {
+        font-size: 1.2rem;
+        font-family: 'Open Sans';
+      }
+
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <script
       async
@@ -30,6 +60,29 @@
   </head>
 
   <body>
-    <h1 class="tagline">Raul Tammesalu builds web apps</h1>
+    <div class="container">
+      <h1 class="name">Raul Tammesalu</h1>
+
+      <p class="body-text">
+        I am a software engineer from
+        <a href="https://maps.app.goo.gl/NBhZpbdEgeacWS7cA" target="_blank">Haapsalu, Estonia.</a> 
+      </p>
+
+      <p class="body-text">
+        When building software, I appreciate clean architecture, domain driven design and test driven development.
+      </p>
+
+      <p class="body-text">I am founding engineer of <a href="https://outfunnel.com">Outfunnel</a>, software
+        that syncs data between different sales and marketing apps.
+      </p>
+
+      <p class="body-text">Before Outfunnel, I was an early engineer at <a href="https://lingvist.com" target="_blank">Lingvist</a>,
+      AI-powered language learning app.</p>
+
+      <p class="body-text">
+        You can follow me on GitHub at <a href="https://github.com/tammesalu" target="_blank">github.com/tammesalu</a>
+        and Instagram at <a href="https://instagram.com/tammesalu" target="_blank">instagram.com/tammesalu</a>
+      </p>
+    </div>
   </body>
 </html>
